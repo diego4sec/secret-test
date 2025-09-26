@@ -3,7 +3,19 @@ instructions
 1. make sure that legit pr checks for secrets is enabled
 2. create a new branch
 3. copy the below text to a new python and commit
+###########################################
 
+
+
+
+
+
+
+##################################################
+
+
+
+###############################################
 #sample credentials 
 [default]
 aws_access_key_id = AKIA2T2SJH6M6OG5YL6T
