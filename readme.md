@@ -16,17 +16,14 @@ instructions
 
 
 ###############################################
-#sample credentials 
-[default]
-aws_access_key_id = AKIA2T2SJH6M6OG5YL6T
-aws_secret_access_key = BYMUjAx63HSt2Ctg6Q4Tq8AfitenrH1oAqbscqKq
-output = json
-region = us-east-2
+
+
 
 import boto3
 from botocore.config import Config
-AWS_ACCESS_KEY = AKIA2T2SJH6M6OG5YL6T
-AWS_SECRET_KEY = BYMUjAx63HSt2Ctg6Q4Tq8AfitenrH1oAqbscqKq
+
+AWS_ACCESS_KEY = "YOUR_NEW_ACCESS_KEY"
+AWS_SECRET_KEY = "YOUR_NEW_SECRET_KEY"
 AWS_REGION     = "us-east-2"
 
 session = boto3.Session(
@@ -35,6 +32,7 @@ session = boto3.Session(
     region_name=AWS_REGION
 )
 
+# Example: list all S3 buckets
 def list_s3_buckets():
     s3 = session.client("s3", config=Config(retries={"max_attempts": 10}))
     resp = s3.list_buckets()
