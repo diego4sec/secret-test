@@ -1,8 +1,8 @@
 import boto3
 from botocore.config import Config
 
-AWS_ACCESS_KEY = "AKIA2T2SJH6M6OG5YL6T"
-AWS_SECRET_KEY = "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"
+AWS_ACCESS_KEY = "secret1"
+AWS_SECRET_KEY = "secret2"
 AWS_REGION     = "us-east-2"
 
 session = boto3.Session(
